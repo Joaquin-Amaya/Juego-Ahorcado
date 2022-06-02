@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado Juego</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="principal">
+        <header>
+            <p id="titulo">Juego del Ahorcado</p>
+        </header>
+        <div>
+            <button class="btn-neon">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                JUGAR AHORA
+            </button>
+            <button class="btn-neon2" id="btn-neon2">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                AGREGAR PALABRA
+            </button>
+        </div>
+    
+    </div>
+    
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-solid fa-circle-xmark"></i></a>
+            <h3>Agregar palabra</h3>
+            <textarea name="textarea" id="textarea" cols="20" rows="1" placeholder="Escribe aqui" maxlength="6"></textarea>
+            <h5><i class="fa-solid fa-circle-exclamation"></i> Max. 6 letras</h5>
+            <button class="btn-agregar-palabra" id="agregar">Agregar y Jugar</button>
+        </div>
+    </div>
+    
+    <div class="juego">
+        <h1 id="titulo">Juego del Ahorcado</h1>
+        <div>
+            <canvas id="canvas"></canvas>
+            <div id="usedLetters"></div>
+        </div>
+        <div id="wordContainer"></div>
+        <div id="frase"></div>
+        <div id="botones">
+            <button id="startButton">Comenzar</button>
+        </div>
+    </div>
+    
+    
+    
+    <script src="https://kit.fontawesome.com/8728b4c91c.js" crossorigin="anonymous"></script>
+    <script src="js/script1.js"></script>
+    
+</body>
+
+</html>
